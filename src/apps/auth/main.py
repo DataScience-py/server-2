@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from login.login_view import router as login_router
-from register.register_view import router as register_router
+from login import login_router
+from register import register_router
 
 from config import settings
 

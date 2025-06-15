@@ -1,0 +1,1 @@
+from .register_view import router as register_router

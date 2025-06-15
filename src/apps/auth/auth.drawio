@@ -1,0 +1,73 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Страница — 1" id="OFDjUX3AVyJFDiMz0R5F">
+    <mxGraphModel dx="951" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hnaCo6frSIVfy84Tddpp-1" value="register" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-2" value="method:&lt;div&gt;pos&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;t&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="165" y="40" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-4" value="Router" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-5" value="database" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="320" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-8" value="Hasher" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="560" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-9" value="UserRepository" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hnaCo6frSIVfy84Tddpp-10" target="hnaCo6frSIVfy84Tddpp-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hnaCo6frSIVfy84Tddpp-10" target="hnaCo6frSIVfy84Tddpp-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-10" value="&lt;div&gt;init&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;password_hasher: Hasher&lt;div&gt;database_orm: DBORM&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get_user(id: int = None, email: str = None, username: str =None) -&amp;gt; User&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;add_user(user: User) -&amp;gt; bool&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;user_exists(user: User) -&amp;gt; bool&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-13" value="RegisterForm:&lt;div&gt;&lt;br&gt;&lt;div&gt;Username: str(Uniq)&lt;/div&gt;&lt;div&gt;email: str(Uniq)&lt;/div&gt;&lt;div&gt;FisrstName: str&lt;/div&gt;&lt;div&gt;LastName: str&lt;/div&gt;&lt;div&gt;password: str&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="80" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-14" value="table User:&lt;div&gt;&lt;br&gt;&lt;div&gt;&amp;nbsp;id: int&lt;br&gt;&lt;div&gt;username: str(5, 25)&lt;/div&gt;&lt;div&gt;email: str(100)&lt;/div&gt;&lt;div&gt;firstname: str(3, 50)&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;lastname: str(3, 50)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;hasshed_password: str(256)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="360" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-16" value="DBORM" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-17" value="User(BaseModel)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="600" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-18" value="id: int&lt;div&gt;username: str&lt;/div&gt;&lt;div&gt;email: str&lt;/div&gt;&lt;div&gt;firstname: str&lt;/div&gt;&lt;div&gt;lastname: str&lt;/div&gt;&lt;div&gt;hashed_password: str&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="640" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hnaCo6frSIVfy84Tddpp-19" target="hnaCo6frSIVfy84Tddpp-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-19" value="verify(password: str, hashed_password: str) -&amp;gt; bool&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;hash(password: str) -&amp;gt; str&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="600" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hnaCo6frSIVfy84Tddpp-20" target="hnaCo6frSIVfy84Tddpp-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-20" value="get_user_by_id(id: int) -&amp;gt; User:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get_user_by_email(email: str) -&amp;gt; User:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get_user_by_username(&lt;/div&gt;&lt;div&gt;username: str) -&amp;gt; User&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="320" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.532;entryY=0.058;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hnaCo6frSIVfy84Tddpp-13" target="hnaCo6frSIVfy84Tddpp-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.553;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hnaCo6frSIVfy84Tddpp-20" target="hnaCo6frSIVfy84Tddpp-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hnaCo6frSIVfy84Tddpp-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.553;entryY=0.042;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hnaCo6frSIVfy84Tddpp-10" target="hnaCo6frSIVfy84Tddpp-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

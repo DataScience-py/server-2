@@ -1,0 +1,50 @@
+# Игнорируем системные файлы
+**/.DS_Store
+**/.git
+**/.gitignore
+**/.vscode
+**/.idea
+
+# Игнорируем виртуальные окружения Python
+**/venv/
+**/env/
+**/.venv/
+**/virtualenv/
+
+# Игнорируем кеш Python
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/.mypy_cache/
+**/.pytest_cache/
+
+# Игнорируем логи и временные файлы
+**/*.log
+**/*.swp
+**/*.swo
+**/.cache/
+
+# Игнорируем зависимости (если они устанавливаются через pip)
+**/Pipfile
+**/Pipfile.lock
+**/poetry.lock
+**/pyproject.toml
+
+# Игнорируем тестовые файлы
+**/tests/
+**/test_*.py
+
+# Игнорируем конфигурационные файлы (если не нужны в контейнере)
+**/.env
+**/.env.local
+**/.flaskenv
+
+# Игнорируем документацию
+**/docs/
+**/README.md
+**/CHANGELOG.md
+
+# Игнорируем сборки и дистрибутивы
+**/build/
+**/dist/
+**/*.egg-info/
